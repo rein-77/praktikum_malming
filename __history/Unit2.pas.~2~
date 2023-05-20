@@ -1,0 +1,58 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ComCtrls,
+  Vcl.ToolWin;
+
+type
+  TForm2 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Button1: TButton;
+    combo: TComboBox;
+    Label4: TLabel;
+    date: TDateTimePicker;
+    Label5: TLabel;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Panel1: TPanel;
+    ToolBar1: TToolBar;
+    StatusBar1: TStatusBar;
+    Button5: TButton;
+    L1: TLabel;
+    L2: TLabel;
+    L3: TLabel;
+    L4: TLabel;
+    L5: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+begin
+edit1.clear;
+edit2.clear;
+edit3.Text := '';
+date.DateTime := now;
+combo.text := '';
+end;
+
+end.
